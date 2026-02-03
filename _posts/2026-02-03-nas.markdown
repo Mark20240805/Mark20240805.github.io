@@ -27,11 +27,11 @@ tags:
 组装nas主要是因为曾经买过两次U盘的不牢靠经历，是U盘自身质量问题，同时考虑到U盘对手机和平板在数据传输方面的不便利。并且偶然在B站刷到的[视频](https://www.bilibili.com/video/BV1E6nvzvEeM/?share_source=copy_web&vd_source=bef723939ced914a7c5e2c3844951fea "【200元装NAS保姆级教程！包含硬件选购+系统安装 有手就行人人都能装「穷数码」】")是我对此引起了兴趣，或许被私人网盘相对商业网盘的传输速度，和网络的方便。一定程度上克服了U盘的部分弊端。满足了我的需求，于是我便开始搞nas了。  
 
 <iframe 
-    src="https://player.bilibili.com/player.html?isOutside=true&aid=115734151694324&bvid=BV1gCq3BVEyc&cid=34795882726&p=1" 
+    src="https://player.bilibili.com/player.html?isOutside=true&aid=115286351086801&bvid=BV1E6nvzvEeM&cid=32715440722&p=1" 
     scrolling="no" 
     frameborder="no" 
     allowfullscreen="true"
-    style="width:100%;height:500px;border-radius:8px;border:none;">
+    style="width:100%;height:500px;border:none;border-radius:8px;">
 </iframe>
 
 
@@ -39,11 +39,12 @@ tags:
 
 ## 第一部分  
 
-选择配件，首先制定大概成本，我初步成本是200元以内。必须要包含机箱，电源，主板(完整)，硬盘，启动盘。  
+选择配件，首先制定大概成本，我初步成本是200元以内。必须要包含机箱，电源，主板(完整)，硬盘，启动盘。 
+
 | 机箱 | 电源 | 主板 | 硬盘 |
-|:---:|:---:|:---:|:---:|
-|台科中电|先马|haier BSWD-CM j3160|杂牌120g|
-|29.9|45|70|34|  
+| :---: | :---: | :---: | :---: |
+| 台科中电 | 先马 | haier BSWD-CM j3160 | 杂牌120g |
+| 29.9 | 45 | 70 | 34 |  
 
 > 合计不到两百元，但是现在显卡、内存、硬盘等价格飞涨，现在的成本可不止200元了 :joy:
 
@@ -81,14 +82,14 @@ tags:
 
 **建议**：飞牛方面部署Easytier时，现在已经有人开发了飞牛系统方面图形化界面的Easytier，对于小白来说比终端配置更好一些，并且该开发者也提供了[教程](https://www.bilibili.com/video/BV1gCq3BVEyc/?share_source=copy_web&vd_source=bef723939ced914a7c5e2c3844951fea "【[飞牛开发]自制Easytier-Web应用，提供图形化界面，完全自建组网教程，不依赖第三方服务】")
 
+
 <iframe 
-    src="https://player.bilibili.com/player.html?isOutside=true&aid=115286351086801&bvid=BV1E6nvzvEeM&cid=32715440722&p=1" 
+    src="https://player.bilibili.com/player.html?isOutside=true&aid=115734151694324&bvid=BV1gCq3BVEyc&cid=34795882726&p=1" 
     scrolling="no" 
     frameborder="no" 
     allowfullscreen="true"
-    style="width:100%;height:500px;border:none;border-radius:8px;">
+    style="width:100%;height:500px;border-radius:8px;border:none;">
 </iframe>
-
 
 关于服务器方面，也有[对比](https://docs.qq.com/document/DV0RCS0lGeHdMTFFV?tab=000003)，仅限2026年1到3月份的有效性。后面随时可能失效
 
