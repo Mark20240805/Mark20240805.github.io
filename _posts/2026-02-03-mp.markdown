@@ -1,0 +1,100 @@
+---
+layout: post
+title: "折腾飞牛nas的经历--从硬件到软件"
+subtitle: "飞牛nas--可用于私人网盘、相册和影视"
+author: "humarkyu"
+header-style: text
+tags:
+  - nas
+  - Web
+  - linux
+  - 服务器
+---
+
+> 从2025年10月底到2026年2月初的几个阶段
+
+
+1.  硬件购买及组装，以及制作飞牛nas启动盘，将飞牛nas系统装进主板里  
+
+2.  飞牛nas的安装时的配置问题以及安装后的配置问题  
+
+3.  飞牛nas在校园网的时内网穿透的尝试  
+
+4.  我对飞牛nas的内网穿透和异地组网的方案与实践
+
+## 引言
+
+组装nas主要是因为曾经买过两次U盘的不牢靠经历，是U盘自身质量问题，同时考虑到U盘对手机和平板在数据传输方面的不便利。并且偶然在B站刷到的[视频](https://www.bilibili.com/video/BV1E6nvzvEeM/?share_source=copy_web&vd_source=bef723939ced914a7c5e2c3844951fea "【200元装NAS保姆级教程！包含硬件选购+系统安装 有手就行人人都能装「穷数码」】")是我对此引起了兴趣，或许被私人网盘相对商业网盘的传输速度，和网络的方便。一定程度上克服了U盘的部分弊端。满足了我的需求，于是我便开始搞nas了。  
+
+
+<iframe 
+    src="https://player.bilibili.com/player.html?isOutside=true&aid=115286351086801&bvid=BV1E6nvzvEeM&cid=32715440722&p=1" 
+    scrolling="no" 
+    frameborder="no" 
+    allowfullscreen="true"
+    style="width:100%;height:500px;border:none;border-radius:8px;">
+</iframe>
+
+
+至于为什么选择飞牛nas，主要也是B站视频及介绍较多的系统，而且系统的部署也比较适合新手。对于我这种知识浅薄的人比较轻松。  
+
+## 第一部分  
+
+选择配件，首先制定大概成本，我初步成本是200元以内。必须要包含机箱，电源，主板(完整)，硬盘，启动盘。  
+| 机箱 | 电源 | 主板 | 硬盘 |
+|:---:|:---:|:---:|:---:|
+|台科中电|先马|haier BSWD-CM j3160|杂牌120g|
+|29.9|45|70|34|  
+
+> 合计不到两百元，但是现在显卡、内存、硬盘等价格飞涨，现在的成本可不止200元了 :joy:
+
+配件组装方面机箱选择的是刚刚好的，不是什么大问题
+
+随后组装完毕后，在主板通电之前要了解主板的跳线启动，[跳线开机](https://blog.csdn.net/weixin_42160499/article/details/120507870)，给主板装系统的时候是用跳线开机的
+
+**建议**：选择硬盘的时候可以尽量要求商家在硬盘里面塞一个Win10系统或者Win7系统，可以通过window系统的高级恢复进入BIOS界面，设定引导程序优先，从而设定U盘启动盘为最优先的引导程序，好装飞牛nas系统。  
+
+## 第二部分   
+
+飞牛系统刚开始安装时最麻烦的配置是网络配置，因为我的所处的网络环境是校园网，通常比较特殊。因为需要通过校园认证，飞牛网络配置时哪怕连上网线，但是没有校园认证是连不上校园网的，通常会配置失败。原本我准备了2个方案，第一个方案就是主板连上以校园网为路由模式的路由器，路由器一个输出端口连的是电脑，另一个连的是主板，在电脑上通过校园认证后，设想路由器方面也会通过认证，那么主板的话应该也可以通过认证的，抑或说路由器方面无论有没有通过校园认证，都会给主板分发IP，那么也有可能通过飞牛的网络配置。
+
+第2个方案最终没有实现，因为第一个方案成功了 :wink:，但是也可以提供一下作为[参考](https://www.cuixinjiang.cn/archives/fei-niu-nas-xiao-yuan-wang)
+
+随后就是正常的管理员账号管理员密码配置，其他的可以参考这个[视频](https://www.bilibili.com/video/BV1E6nvzvEeM/?share_source=copy_web&vd_source=bef723939ced914a7c5e2c3844951fea "【200元装NAS保姆级教程！包含硬件选购+系统安装 有手就行人人都能装「穷数码」】")
+
+最后就可以尽情的享用飞牛nas了 :laughing:
+
+## 第三部分    
+
+> 尽管飞牛系统自身带有远程访问的功能但是远程访问的速度较慢不能满足较大文件的需求。最高是速率500kb/s，无论是上传还是下载都比较慢
+
+所以当初想的是能否只在校园网的环境下实现公网访问,但是最后以我浅薄的网络知识以及各处搜罗最后的结果是不大可能的。
+
+同时也考虑过异地组网的方案，最后是因没有充分学习相关知识，以为异地组网必须得搞个服务器，所以在上学期间就没有实施。
+
+因此直到我放假的时候飞牛系统也只能在局域网内实践高速上传下载以及充当第二个移动U盘的效果。
+
+## 第四部分     
+
+放假过后为了实现公网访问的追求或者异地组网的实施，特地将nas带回家。本来是想靠光猫的IP公网以及cloudflare隧道穿透来实现的。结果发现家里的电信光猫没有IPV6公网。虽然有IPV4公网的[方案](https://hswzi.cn/docker%E5%BA%94%E7%94%A8/613/%E9%A3%9E%E7%89%9Bnas%E7%9A%844%E7%A7%8D%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E6%96%B9%E5%BC%8F%E4%BB%8B%E7%BB%8D%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%85%AC%E7%BD%91ip%E7%9B%B4%E8%BF%9E%E7%9A%84%E7%90%86/)，但是实施没有成功
+
+后来为了想写博客特地买了一个阿里云服务器，想到了可以实现[异地组网](https://club.fnnas.com/forum.php?mod=viewthread&tid=33885)，于是在2026年2月3日也就是今天成功实现异地组网。 
+
+**建议**：飞牛方面部署Easytier时，现在已经有人开发了飞牛系统方面图形化界面的Easytier，对于小白来说比终端配置更好一些，并且该开发者也提供了[教程](https://www.bilibili.com/video/BV1gCq3BVEyc/?share_source=copy_web&vd_source=bef723939ced914a7c5e2c3844951fea "【[飞牛开发]自制Easytier-Web应用，提供图形化界面，完全自建组网教程，不依赖第三方服务】")
+
+<iframe 
+    src="https://player.bilibili.com/player.html?isOutside=true&aid=115734151694324&bvid=BV1gCq3BVEyc&cid=34795882726&p=1" 
+    scrolling="no" 
+    frameborder="no" 
+    allowfullscreen="true"
+    style="width:100%;height:500px;border-radius:8px;border:none;">
+</iframe>
+
+关于服务器方面，也有[对比](https://docs.qq.com/document/DV0RCS0lGeHdMTFFV?tab=000003)，仅限2026年1到3月份的有效性。后面随时可能失效
+
+> 如果身为学生的话阿里云可以免费获得一个半年的2G2M的轻量应用服务器。可以试试，当然这个服务器不仅可以用来异地组网用来建站也是绰绰有余
+
+以上
+
+
+
