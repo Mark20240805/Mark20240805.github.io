@@ -171,3 +171,30 @@ layout: default
     }
 </style>
 {% endif %}
+
+<!-- 强制目录生成修复脚本 -->
+<script>
+    window.addEventListener('load', function() {
+        var catalogContainer = document.querySelector('.side-catalog .catalog-body');
+        var postContainer = document.querySelector('.post-container');
+        
+        if (catalogContainer && postContainer) {
+            // 如果目录是空的，尝试手动生成
+            if (catalogContainer.innerHTML.trim() === "") {
+                var headings = postContainer.querySelectorAll('h1, h2, h3');
+                
+                headings.forEach(function(heading) {
+                    if (!heading.id) {
+                        heading.id = heading.textContent.trim().replace(/\s+/g, '-');
+                    }
+                    var li = document.createElement('li');
+                    var a = document.createElement('a');
+                    a.href = '#' + heading.id;
+                    a.textContent = heading.textContent;
+                    li.appendChild(a);
+                    catalogContainer.appendChild(li);
+                });
+            }
+        }
+    });
+</script>
