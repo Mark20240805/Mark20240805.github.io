@@ -3,7 +3,7 @@ layout: post
 title: "折腾飞牛nas的经历--从硬件到软件"
 subtitle: "飞牛nas--可用于私人网盘、相册和影视"
 author: "humarkyu"
-catalog: true
+header-style: text
 tags:
   - nas
   - Web
