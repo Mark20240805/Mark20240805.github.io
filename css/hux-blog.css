@@ -1626,6 +1626,31 @@ img::-moz-selection {
   width: 1.2em;
   height: 1.2em;
 }
+/* =========================================
+   修复表格样式缺失
+   强制给文章内的所有表格添加边框和间距
+   ========================================= */
+.post-container table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-collapse: collapse; /* 合并边框 */
+    display: table;
+}
+
+.post-container table th,
+.post-container table td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border: 1px solid #ddd; /* 给每个单元格加边框 */
+}
+
+.post-container table th {
+    font-weight: bold;
+    background-color: #f9f9f9; /* 表头加浅灰色背景，区分更明显 */
+    text-align: center; /* 你的Markdown设定了居中，这里确保生效 */
+}
 /* Hux Optimize UserExperience */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
