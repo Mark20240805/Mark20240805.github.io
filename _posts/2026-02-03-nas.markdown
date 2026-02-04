@@ -82,5 +82,40 @@ tags:
 
 以上
 
-
+<!-- 强制目录生成修复脚本 -->
+<script>
+    // 确保在页面加载后执行
+    window.onload = function() {
+        var catalogContainer = document.querySelector('.side-catalog .catalog-body');
+        // 查找正文容器，通常是 post-container
+        var postContainer = document.querySelector('.post-container');
+        
+        if (catalogContainer && postContainer) {
+            // 如果目录是空的，尝试手动生成
+            if (catalogContainer.innerHTML.trim() === "") {
+                console.log("正在尝试强制生成目录...");
+                var headings = postContainer.querySelectorAll('h1, h2, h3');
+                
+                headings.forEach(function(heading) {
+                    if (!heading.id) {
+                        // 如果标题没有ID，给它赋一个
+                        heading.id = heading.textContent.trim().replace(/\s+/g, '-');
+                    }
+                    var li = document.createElement('li');
+                    var a = document.createElement('a');
+                    a.href = '#' + heading.id;
+                    a.textContent = heading.textContent;
+                    // 修复样式
+                    a.style.display = 'block';
+                    a.style.paddingLeft = '10px';
+                    
+                    li.appendChild(a);
+                    catalogContainer.appendChild(li);
+                });
+            }
+        } else {
+            console.log("未找到目录容器或文章容器");
+        }
+    };
+</script>
 
