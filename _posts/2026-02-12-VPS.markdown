@@ -1,0 +1,85 @@
+---
+layout: post
+title: "VPS部分相关链接"
+subtitle: "主要是推荐比较平价，沉没成本效率不大的的VPS"
+author: "humarkyu"
+header-style: text
+tags:
+  - VPS
+  - linux
+  - 服务器
+---
+
+> 本篇文章的数据、链接来源于此[VPS 测评平台]("https://digvps.com/")
+
+我个人被年付VPS小坑过一次后，现在的感想是能买月付就买月付特别是平价的VPS，哪怕这个平价的VPS年付比月付乘12便宜一点，一些。为了沉没成本考虑，而且平价的VPS是容易被搞。尽管我上一次年付VPS关于它的评价确实不太好，但我还是觉得有可能是我的使用经验欠缺的占大头。
+
+但是这也使我想到了沉没成本。
+
+> 以下是相关部分VPS，表格最左侧的链接不是直接到VPS官网的链接。
+> 表格最后是作为价格以及沉没成本的角度来看的,价格贵还是便宜还是取决于个人。
+
+|                                          |         |        |
+| ---------------------------------------- | ------- | ------ | 
+| VPS                                      | 价格min/年/元 | 价格适合 |
+| https://digvps.com/review/dmit           | 260     | no |
+| https://digvps.com/review/zgo            | 313     | no |
+| https://digvps.com/review/gomami         | 5764    | no |
+| https://digvps.com/review/lisahost       | 199     | no |
+| https://digvps.com/review/yunyoo         | 216     | no |
+| https://digvps.com/review/bandwagon      | 1392    | no |
+| https://digvps.com/review/wepc           | 865     | no |
+| https://digvps.com/review/vmiss          | 301     | no |
+| https://digvps.com/review/bytevirt       | 460     | no |
+| https://digvps.com/review/yin-net        | 835     | no |
+| https://digvps.com/review/evoxt          | 250     | no |
+| https://digvps.com/review/rfchost        | 1580    | no |
+| https://digvps.com/review/racknerd       | 74      | maybe no |
+| https://digvps.com/review/skylineconnect | 292     | no |
+| https://digvps.com/review/acck           | 89      | maybe |
+| https://digvps.com/review/akile          | 300     | no |
+| https://digvps.com/review/zorocloud      | 588     | no |
+| https://digvps.com/review/wap.ac         | 83      | maybe yes |
+| https://digvps.com/review/svyun          | 720     | no |
+| https://digvps.com/review/dogyun         | 420     | no |
+| https://digvps.com/review/sixtynet       | 2095    | no |
+| https://digvps.com/review/666clouds      | 720     | no |
+| https://digvps.com/review/v.ps           | 676     | no |
+| https://digvps.com/review/v5             | 313     | no |
+| https://digvps.com/review/ipraft         | 1087    | no |
+| https://digvps.com/review/isif           | 340     | no |
+| https://digvps.com/review/bitsflow       | 192     | yes |
+| https://digvps.com/review/akkocloud      | 299     | no |
+| https://digvps.com/review/backwaves      | 320     | no |
+| https://digvps.com/review/lycheen        | 336     | no |
+| https://digvps.com/review/qqg            | 2506    | no |
+| https://digvps.com/review/bage           | 333     | no |
+| https://digvps.com/review/zovps          | 600     | no |
+| https://digvps.com/review/orangevps      | 261     | no |
+| https://digvps.com/review/pqs            | 6456    | no |
+| https://digvps.com/review/nosla          | 468     | no |
+| https://digvps.com/review/bestvm         | 840     | no |
+| https://digvps.com/review/zhaomu         | 1540    | no |
+| https://digvps.com/review/dotdot         | 138     | maybe |
+| https://digvps.com/review/sadidc         | 118     | maybe no |
+| https://digvps.com/review/cubecloud      | 948     | no |
+| https://digvps.com/review/ishosting      | 850     | no |
+| https://digvps.com/review/digitalvirt    | 228     | no |
+| https://digvps.com/review/colocrossing   | 70      | maybe no |
+| https://digvps.com/review/skystroll      | 550     | no |
+| https://digvps.com/review/vmshell        | 230     | no |
+| https://digvps.com/review/niihost        | 166     | no |
+| https://digvps.com/review/rcvps          | 99      | no |
+| https://digvps.com/review/terabix        | 417     | no |
+| https://digvps.com/review/jiluoyun       | 167     | no |
+| https://digvps.com/review/taphip         | 106     | maybe |
+| https://digvps.com/review/desivps        | 132     | maybe |
+| https://digvps.com/review/limee          | 116     | maybe yes |
+| https://digvps.com/review/halocloud      | 125     | maybe yes |
+| https://digvps.com/review/sakura         | 208     | maybe yes |
+| https://digvps.com/review/yt             | 168     | no |
+| https://digvps.com/review/cloudcone      | 138     | no |
+| https://digvps.com/review/haruka         | 208     | no |
+
+如果是拿VPS做虚拟网络转发的话，这方面可以直接买相关官网的，价格也是比较平价。对于我而言月租顶多不超过十块钱，极限。当然是越低越好但是太低也不好，在十块钱以内的月租，性价比的话还是七块钱差不多。 :smiley: 😃
+
